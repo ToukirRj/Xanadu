@@ -26,6 +26,10 @@ new VenoBox({
 });
 
 
+
+
+
+
 $('.all-wir-slider').slick({
 	arrows: false,
 	centerMode: false,
