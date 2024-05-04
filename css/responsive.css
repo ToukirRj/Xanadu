@@ -35,8 +35,11 @@
 	}
 }
 @media all and (max-width: 1365px) {
+	.head-text h2 {
+		font-size: 39px;
+	}
 	.header-area .navbar-collapse .navbar-nav .nav-link {
-		padding: 2px 10px;
+		padding: 10px 12px;
 	}
 	.banner-area .carousel-inner .item .content h1 {
 		font-size: 39px;
@@ -57,7 +60,7 @@
 		line-height: 44px;
 	}
 	.gentlenero-part .gentlenero-text h3 {
-		font-size: 24px;	
+		font-size: 12px;
 	}
 	.da-mein-part .da-text h2 {
 		font-size: 24px;
@@ -118,6 +121,13 @@
 	}
 }
 @media all and (max-width: 991px) {
+	.header-area .navbar-collapse {
+		padding: 20px 15px;
+		background: #002838;
+	}
+	.menu-fixed {
+
+	}
 	.real-footer p {
 		text-align: center;
 	}
@@ -191,25 +201,36 @@
 		margin: auto;
 	}
 	.gentlenero-part .gentlenero-text h3 {
-		font-size: 18px;
+		font-size: 12px;
 		line-height: 24px;
 	}
 	.gentlenero-part .gentlenero-text h2 {
 		font-size: 28px;
 		line-height: 36px;
 	}
-	.gentlenero-part .gentlenero-text h3 {
-		padding-bottom: 15px;
+	.es-gibt-left{
+		margin-bottom:40px;
+	}
+	.last-book .last-book-area h1 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.last-section {
+		padding: 50px 0;
 	}
 	.banner-area .carousel-inner .item .content {
 		width: 100%;
 		position: relative;
-		padding-top: 612px;
+		padding-top: 180px;
 	}
 	.banner-area .carousel-inner .item .div-image {
 		bottom: -15px;
 		position: relative;
 		margin-bottom: 30px;
+		margin-top:90px;
+	}
+	.about-text {
+		margin-top: 40px;
 	}
 	.banner-area .carousel-inner .item .content h1 {
 		font-size: 40px;
@@ -330,7 +351,6 @@
 		margin-top: 20px;
 		border-top: 1px solid rgba(196, 173, 158, 0.2);
 		border-bottom: 1px solid rgba(196, 173, 158, 0.2);
-		padding: 20px 0;
 	}
 	.not-mobile{
 		display:none;
@@ -348,6 +368,9 @@
 	}
 }
 @media all and (max-width: 767px) {
+	.gentlenero-info-text {
+		margin-bottom: 30px;
+	}
 	.footer-area {
 		padding: 0 20px;
 	}
@@ -374,9 +397,10 @@
 		font-size: 11px;
 	}
 	.es-gibt-part {
-		background-position: top;
-		min-height: 1640px;
-		background-size: contain;
+		min-height: auto;
+	}
+	.last-book .last-book-area h1 {
+		font-size: 24px;
 	}
 	.es-gibt-part .es-gibt-left .es-left-headding {
 		font-size: 11px;
@@ -388,11 +412,12 @@
 		bottom: 40px;
 	}
 	.gentlenero-info-text p {
-		font-size: 16px;
-		margin-bottom: 30px;
+		font-size: 14px;
+		margin-bottom: 0;
+		font-weight: 400;
 	}
 	.gentlenero-part .gentlenero-text h2 {
-		font-size: 18px;
+		font-size: 24px;
 		line-height: 29px;
 	}
 	.banner-area {
@@ -420,5 +445,78 @@
 	}
 	.collection .tab-content .tab-pane img {
 		width: 24%;
+	}
+}
+
+
+@media all and (max-width: 575px) {
+	.banner-area .carousel-inner .item .content {
+		padding-top: 115px;
+	}
+	.banner-area .carousel-inner .item .div-image {
+		margin-top: 15px;
+		margin-bottom:15px;
+	}
+	.last-section .mailfo {
+		font-size: 27px;
+	}
+	.about-area {
+		padding: 50px 0;
+	}
+	.about-area .about-img img {
+		border-radius: 20px;
+	}
+	.about-text p {
+		font-size: 14px;
+		font-weight: 400;
+	}
+	.gentlenero-part {
+		padding: 50px 0 30px;
+	}
+	.gentlenero-part .gentlenero-text h2 {
+		font-size: 21px;
+		line-height: 15px;
+	}
+	.gentlenero-info-text {
+		padding: 20px;
+		border-radius: 30px;
+	}
+	.gentlenero-info-text img {
+		border-radius: 20px;
+	}
+	.es-gibt-part {
+		padding: 50px 0px;
+	}
+	.about-area.last {
+		padding: 50px 0 100px 0;
+	}
+	.last-book .last-book-area h1 {
+		font-size: 18px;
+		line-height: 25px;
+		margin-bottom:10px;
+	}
+	.last-book .last-book-area {
+		border-radius: 20px;
+		padding: 20px 10px;
+	}
+	.last-section .footer-logo img {
+		width: 190px;
+	}
+	.real-footer p {
+		font-size: 9px;
+	}
+	.last-section h3 {
+		font-size: 14px;
+		line-height: 12px;
+	}
+	.last-book {
+		top: -57px;
+	}
+	.head-text h2 {
+		font-size: 32px;
+	}
+	.es-gibt-part .es-gibt-left h1 {
+		font-size: 32px;
+		line-height: 39px;
 	}
 }

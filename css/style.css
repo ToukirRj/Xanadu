@@ -708,20 +708,20 @@ p {
 }
 .last-section .footer-logo{
 	width:auto;
-	margin:auto;
+	margin:100px auto auto;
 	display:table;
 }
-.last-section .footer-logo img{
-    width:auto;
+.last-section .footer-logo img {
+	width: 250px;
 }
-.last-section h3{
+.last-section h3 {
 	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
+	font-weight: 500;
+	font-size: 20px;
 	line-height: 38.4px;
 	text-align: center;
 	color: rgba(255, 255, 255, 1);
-	margin-top:30px;
+	margin: 15px 0;
 }
 .last-section h1 {
 	font-style: normal;
@@ -734,35 +734,36 @@ p {
 	margin-top: 15px;
 	margin-bottom: 35px;
 }
-.last-section h5{
+.last-section .mailfo {
 	font-style: normal;
-	font-weight: 400;
-	font-size: 24px;
-	line-height:28.8px;
+	font-weight: 200;
+	font-size: 41px;
+	line-height: 28.8px;
 	text-align: center;
-	color: rgba(196, 173, 158, 1);
+	color: #A4E700;
+	display:table;
+	margin:auto;
 }
-
 
 
 
 /* footer-part */
 .footer-area{
-  padding: 0 60px;
-  width: 100%;
+	padding: 0 60px;
+	width: 100%;
 }
 .real-footer{
-  padding:35px 0;
-  border-top: 1px solid rgba(196, 173, 158, 0.2);
+	padding:35px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .real-footer p{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 14px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 14px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.4);
 }
 .real-footer ul{
 	margin: 0;
@@ -771,20 +772,19 @@ p {
 }
 .real-footer ul li{
 	list-style-type:none;
-  display:inline-block;
+	display:inline-block;
 }
 .real-footer ul li a{
 	display:block;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 14px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
-  padding:0 18px;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  font-family: 'Source Sans Pro', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 14px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.4);
+	padding:0 18px;
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 .real-footer ul li:first-child a{
   border-left:0;
