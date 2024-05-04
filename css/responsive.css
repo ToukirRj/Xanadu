@@ -95,6 +95,9 @@
 	.es-gibt-part .es-gibt-left h1 {
 		font-size: 27px;
 	}
+	.header-area .navbar-brand img {
+		width: 250px;
+	}
 }
 
 @media all and (max-width: 1099px) {
@@ -241,11 +244,16 @@
 	.navbar-toggler i{
 		color: #fff;
 		font-size: 16px;
-		border: 1px solid #222;
+		border: 1px solid rgba(255, 255, 255, 0.15);
 		padding: 10px 13px;
 	}
 	.header-area .navbar-brand {
-		top: -8px;
+		top: -3px;
+		left: auto;
+		right: 0;
+		position: relative;
+		transform: none;
+		margin-right: 0;
 	}
 	.header-area {
 		padding: 30px 50px;
@@ -254,10 +262,9 @@
 		padding: 8px 50px;
 	}
 	.header-area .navbar-brand img{
-		width:100px;
+		width:250px;
 	}
 	.mobile-language{
-		font-family: 'Source Sans Pro', sans-serif;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 11px;
@@ -272,24 +279,22 @@
 	}
 
 	.header-area .navbar-collapse .navbar-nav .nav-link {
-		font-family: 'Iskry Regular';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 24px;
 		line-height: 33.6px;
-		color: #C4AD9E;
+		color: rgba(255, 255, 255, 0.4);
 		letter-spacing:0;
 		text-transform: capitalize;
 		padding: 8px 0;
 		border-right:0 !important;
 	}
 	.header-area .navbar-collapse .navbar-nav .nav-item label {
-		font-family: 'Source Sans Pro';
 		font-style: normal;
 		font-weight: 300;
 		font-size: 14px;
 		line-height: 19.6px;
-		color: rgba(196, 173, 158, 0.7);
+		color: rgba(255, 255, 255, 0.4);
 	}
 
 	.header-area .navbar-collapse .nav-area{
@@ -302,20 +307,24 @@
 		width:50%;
 	}
 	.header-area .navbar-collapse .navbar-nav:last-child .nav-item {
-		border-bottom: 1px solid rgba(196, 173, 158, 0.2);
+		border-bottom: 0;
 		padding: 10px 0;
 	}
 	.header-area .navbar-collapse .navbar-nav:last-child .nav-item.mai {
 		border-bottom: 0;
+		text-align:left;
 	}
-	.header-area .navbar-collapse .navbar-nav:last-child .nav-link{
-		font-family: 'Iskry Regular';
+	.header-area .navbar-collapse .navbar-nav .nav-item.mai .nav-link {
+		text-align:left;
+	}
+	.header-area .navbar-collapse .navbar-nav:last-child .nav-link {
 		font-style: normal;
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 16.8px;
-		color: #C4AD9E;
-		padding: 5px 0;
+		color: rgba(255, 255, 255, 0.4);
+		padding: 10px 0;
+		text-align: center;
 	}
 	.header-area .navbar-collapse {
 		margin-top: 20px;
@@ -400,7 +409,7 @@
 		line-height: 14px;
 	}
 	.header-area {
-		padding: 30px 15px;
+		padding: 5px 15px;
 	}
 	.header-area.menu-fixed {
 		padding: 8px 15px;
