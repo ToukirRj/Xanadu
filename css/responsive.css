@@ -125,9 +125,6 @@
 		padding: 20px 15px;
 		background: #002838;
 	}
-	.menu-fixed {
-
-	}
 	.real-footer p {
 		text-align: center;
 	}
@@ -256,8 +253,8 @@
 	.mobile-language{
 		display:block;
 	}
-	.navbar-toggler{
-		padding: 0;
+	.navbar-toggler {
+		padding:3px 6px;
 	}
 	.navbar-toggler:focus{
 		box-shadow:none;
