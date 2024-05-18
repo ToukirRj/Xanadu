@@ -228,7 +228,15 @@
 	}
 	.about-text {
 		margin-top: 40px;
+		padding-left:0;
 	}
+	.about-text label {
+    	font-size: 21px;
+    	margin-bottom: 12px;
+    }
+    .about-text ul li {
+    	font-size: 15px;
+    }
 	.banner-area .carousel-inner .item .content h1 {
 		font-size: 40px;
 		line-height: 44px;
@@ -363,6 +371,37 @@
 		padding: 5px 0;
 		line-height:52.4px;
 	}
+    .es-gibt-part .right-left-text h2 {
+    	font-size: 26px;
+    	line-height: 32px;
+    	margin-bottom: 10px;
+    }
+    .es-gibt-part .right-left-text a {
+    	font-size: 16px;
+    	margin-bottom: 20px;
+    	display: block;
+    }
+    .start-btn.commer {
+    	font-size: 16px;
+    }
+    .start-btn.commer:hover {
+    	font-size: 16px;
+    }
+	.about-area.last.inner {
+		padding: 110px 0 80px 0;
+	}
+	.contact-frame {
+		padding: 40px 0;
+	}
+	.severy-box {
+		margin-top: 65px;
+	}
+	.gentlenero-part.calculate iframe{
+	    height:50rem !important;
+	}
+	.contact-frame iframe{
+        height:1500px !important;
+    }
 }
 @media all and (max-width: 767px) {
 	.gentlenero-info-text {

@@ -4,9 +4,10 @@
 <head>
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-   <title>Xanadu Cleaning - Contact</title>
+   <title>Xanadu Cleaning - Booking</title>
 
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/style.css">
@@ -42,7 +43,7 @@
                                 <a class="nav-link" href="services.html">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="contact.html">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav">
@@ -61,39 +62,20 @@
         <div class="inner-banner">
             <div class="container">
                 <div class="inner-head">
-                    <h1>Contact Us</h1>
-                    <p>Contact us directly to get a quote</p>
+                    <h1>Booking Checkout Form</h1>
+                    <p>You are 1 Minute Away from Having a Clean Home</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <section class="contact-frame" style="background:rgba(1, 68, 85, 0.35);">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-center wow fadeInUp">
-                <iframe id="frameContact" src="https://modernmaid.io/iframes/quotation-form/4b46f2540c64ba6ea94c13efd1d7d971" scrolling="no" width="100%" height="1300" style="border: 0"></iframe>  
-            </div>
-        </div>
-        <div class="footer-top-height"></div>
+    <section class="booking-area" style="background:rgba(1,90,125,0.15)">
+        <iframe src="https://modernmaid.io/iframes/bookings/4b46f2540c64ba6ea94c13efd1d7d971" width="100%" id="modernmaid-booking-iframe" style="border: 0"></iframe>
     </section>
-
+    
 
     <!--start last area-->
-    <section class="last-section">
-        <div class="last-book">
-            <div class="container">
-                <div class="last-book-area">
-                    <h1>Book An Appointment With Our <br>Dedicated Team!</h1>
-                    <a href="book.html" class="start-btn btn2">Book Now
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024">
-                                <path fill="#18232B" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"></path>
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section class="last-section pt-0 wow fadeInUp" data-wow-delay="0.3s">
         <a href="index.html" class="footer-logo">
             <img src="images/main-logo.webp" alt="logo"/>
         </a>
@@ -126,6 +108,21 @@
 
     <!--All JS Files Here-->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="https://modernmaid.io/iframe-sdk/modernmaid-iframe-sdk.js?version=0.1"></script>
+    <script>
+        window.ModernmaidIframeSdk.setup("4b46f2540c64ba6ea94c13efd1d7d971");
+    </script> 
+    
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            var pageLoader = document.querySelector('.page-loader');
+            if (pageLoader) {
+                pageLoader.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

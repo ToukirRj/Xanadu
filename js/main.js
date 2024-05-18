@@ -1,65 +1,23 @@
-;(function($){
-"use strict";
-    
-    //sticky Header
-	var wind = $(window);
-	var sticky = $('.header-area');
-	wind.on('scroll', function () {
-		var scroll = wind.scrollTop();
-		if (scroll < 150) {
-			sticky.removeClass('menu-fixed');
-		} else {
-			sticky.addClass('menu-fixed');
-		}
-	});
-    
-	// Preloader
-	$(window).on('load', function () {
-		$('.page-loader').fadeOut();
-	});
-    
-})(jQuery)
+// Selecting window and header elements
+var wind = window;
+var sticky = document.querySelector('.header-area');
 
+// Adding scroll event listener to window
+wind.addEventListener('scroll', function() {
+    // Getting current scroll position
+    var scroll = wind.scrollY || wind.pageYOffset;
+    // Checking scroll position and adding/removing class accordingly
+    if (scroll < 150) {
+        sticky.classList.remove('menu-fixed');
+    } else {
+        sticky.classList.add('menu-fixed');
+    }
+});
 
-
-// $('.all-wir-slider').slick({
-// 	arrows: false,
-// 	centerMode: false,
-// 	slidesToShow: 3,
-// 	slidesToScroll: 1,
-//  	centerMode: true,
-//  	centerPadding:"250px",
-//  	autoplaySpeed: 2000,
-// 	 dots: true,
-// 	responsive: [
-// 	  {
-// 		breakpoint: 1367,
-// 		settings: {
-// 		  centerPadding: '40px',
-// 		  slidesToShow: 4
-// 		}
-// 	  },
-// 	  {
-// 		breakpoint: 1101,
-// 		settings: {
-// 		  centerPadding: '40px',
-// 		  slidesToShow: 3
-// 		}
-// 	  },
-// 	  {
-// 		breakpoint: 768,
-// 		settings: {
-// 		  centerPadding: '40px',
-// 		  slidesToShow: 2
-// 		}
-// 	  },
-// 	  {
-// 		breakpoint: 480,
-// 		settings: {
-// 		  centerPadding: '40px',
-// 		  slidesToShow: 1
-// 		}
-// 	  }
-// 	]
-// });
-
+// Preloader
+window.addEventListener('load', function() {
+    var pageLoader = document.querySelector('.page-loader');
+    if (pageLoader) {
+        pageLoader.style.display = 'none';
+    }
+});
